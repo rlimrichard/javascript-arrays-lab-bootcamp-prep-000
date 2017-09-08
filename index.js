@@ -6,5 +6,21 @@ function destructivelyAppendKitten(name){
 }
 
 function destructivelyPrependKitten(name){
-    kittens.slice(name)
+    kittens.unshift(name)
+}
+
+function destructivelyRemoveFirstKitten(){
+    kittens.shift(name)
+}
+
+function appendKitten(name){
+    return [name, ...kittens]
+}
+
+function removeLastKitten(){
+    return kittens.slice(0, kittens.length-1)
+}
+
+function removeFirstKitten(){
+    return kittens.slice(1, kittens.length)
 }
